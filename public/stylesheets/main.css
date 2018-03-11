@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-content {
+    height: 100%;
+}
+
+#submission {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+
+    background-image: url("http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/book-icon.png");
+    background-size: 100% 100%;
+}
+
+.business-name {
+    font-size: 36px;
+    font-weight: 900;
+    color: #00a383;
+    text-align: center;
+    margin: 10px 0 50px;
+}
+
+.business-name span {
+    font-weight: 500;
+    color: #aab;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 10px;
+    
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #00a383;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    width: 130px;
+    height: 40px;
+
+    margin: 20px 10px 10px;
+    border: none;
+    background: salmon;
+
+    color: white;
+    transition: background .3s;
+}
+
+.button-container button:hover {
+    background: red;
+    cursor: pointer;
+
+    transition: background .3s;
+}
