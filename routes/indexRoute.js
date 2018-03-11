@@ -3,7 +3,8 @@ var router = express.Router();
 var path = require('path');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile(path.resolve('views/index.html'))
+  // res.sendFile(path.resolve('views/index.html'))
+  res.render('index');
   var sys   = require('util'),
     spawn = require('child_process').spawn,
     dummy  = spawn('python', [path.resolve('python/test.py')]);
