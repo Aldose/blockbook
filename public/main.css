@@ -3,6 +3,9 @@ body {
     width: 100vw;
 }
 
+/* Remove Chrome Terrible Target Glow */
+textarea, input, button { outline: none; }
+
 .main-content {
     height: 100%;
 }
