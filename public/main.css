@@ -70,3 +70,58 @@ body {
 
     transition: background .3s;
 }
+
+.info-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.origin, .current, .title {
+    height: 50px;
+    width: 80%;
+    margin: 1px;
+
+    background: salmon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-home {
+    width: 80%;
+    height: 60px;
+
+    margin: 20px 10px 10px;
+    border: none;
+    background: salmon;
+
+    font-size: 20px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background .3s;
+}
+
+.go-home:hover {
+    background: red;
+    
+    transition: background .3s;
+}
+
+@media only screen and (min-width: 426px) {
+    .info-container {
+        flex-direction: row;
+    }
+
+    .origin, .current, .title, .go-home {
+        width: 30%;
+    }
+}
